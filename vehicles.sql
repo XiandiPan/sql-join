@@ -38,11 +38,4 @@ INSERT INTO vehicles (make, model, year, price, owner_id)
     ('BMW', '300', 2012, 22999.99, 6),
     ('BMW', '700', 2015, 52999.99, 6);
 
-    SELECT first_name, AVG(*)
-    FROM owners
-    JOIN vehicles
-    ON owners.id = vehicles.owner_id
-    GROUP BY first_name
-    ORDER BY first_name ASC
 
-    SELECT first_name
